@@ -1,0 +1,19 @@
+{
+  "name": "demo",
+  "version": "0.0.0",
+  "description": "Demo project",
+  "author": "LongYinan <longyinan.brooklyn@bytedance.com>",
+  "homepage": "https://github.com/Brooooooklyn/ssr-compatible#readme",
+  "license": "MIT",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Brooooooklyn/ssr-compatible.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/Brooooooklyn/ssr-compatible/issues"
+  }
+}

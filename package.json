@@ -1,0 +1,79 @@
+{
+  "name": "ssr-compatible",
+  "version": "0.0.0",
+  "description": "Wrap SSR adapter for non-compatible libraries ",
+  "main": "lib/index.js",
+  "repository": "https://github.com/Brooooooklyn/ssr-compatible",
+  "author": "lynweklm@gmail.com",
+  "license": "MIT",
+  "workspaces": [
+    "./packages/*"
+  ],
+  "scripts": {
+    "build": "cross-env NODE_ENV=production run-s clean build:esm build:bundle clean:js",
+    "build:bundle": "rollup --config rollup.config.js",
+    "build:esm": "tsc -b tsconfig.project.json -verbose",
+    "clean": "shx rm -rf ./packages/**/*.tsbuildinfo && shx rm -rf ./packages/**/{esm,dist}",
+    "clean:js": "shx rm -rf './packages/**/esm/**/*.{js,map}'",
+    "demo": "TS_NODE_PROJECT=./tsconfig.cjs.json webpack-dev-server --config ./webpack.config.ts",
+    "lint": "eslint . -c ./.eslintrc.yml 'packages/**/*.{ts,tsx}'"
+  },
+  "private": true,
+  "devDependencies": {
+    "@types/lodash": "^4.14.149",
+    "@types/node": "^13.9.5",
+    "@types/sinon": "^7.5.2",
+    "@types/wavesurfer.js": "^3.2.0",
+    "@types/webpack": "^4.41.9",
+    "@types/webpack-dev-server": "^3.10.1",
+    "@typescript-eslint/eslint-plugin": "^2.25.0",
+    "@typescript-eslint/parser": "^2.25.0",
+    "ava": "^3.5.2",
+    "codecov": "^3.6.5",
+    "cross-env": "^7.0.2",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-sonarjs": "^0.5.0",
+    "file-loader": "^6.0.0",
+    "html-webpack-plugin": "^4.0.3",
+    "husky": "^4.2.3",
+    "lerna": "^3.20.2",
+    "lint-staged": "^10.0.10",
+    "lodash": "^4.17.15",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.0.2",
+    "rollup": "^2.3.0",
+    "rollup-plugin-sourcemaps": "^0.5.0",
+    "shx": "^0.3.2",
+    "sinon": "^9.0.1",
+    "ts-loader": "^6.2.2",
+    "ts-node": "^8.8.1",
+    "tslib": "^1.11.1",
+    "typescript": "^3.8.3",
+    "wavesurfer.js": "^3.3.1",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "lint-staged": {
+    "*.@(js|ts|tsx)": [
+      "prettier --write",
+      "eslint -c .eslintrc.yml --fix"
+    ]
+  },
+  "prettier": {
+    "printWidth": 120,
+    "semi": false,
+    "trailingComma": "all",
+    "singleQuote": true,
+    "arrowParens": "always",
+    "parser": "typescript"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
+}
