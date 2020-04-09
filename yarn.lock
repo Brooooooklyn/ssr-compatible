@@ -9464,9 +9464,9 @@ watchpack@^1.6.0:
     neo-async "^2.5.0"
 
 wavesurfer.js@^3.3.1:
-  version "3.3.1"
-  resolved "https://registry.yarnpkg.com/wavesurfer.js/-/wavesurfer.js-3.3.1.tgz#af6e4fb260c7d4fe1b14e7eb51df2dea802ad5c6"
-  integrity sha512-5w+Daa4EIoFcErXX4hZSkNdfdnCSTiaoTJMF5r7O7O6Kiv+oCrIlLwA73Ms9ULs+IZqOM9XhC33sfINgYdC4rw==
+  version "3.3.2"
+  resolved "https://registry.yarnpkg.com/wavesurfer.js/-/wavesurfer.js-3.3.2.tgz#81903dac25881732b461eddcb1bd98375793733e"
+  integrity sha512-W/CYjxVATvmRdhYpYEYsIGoYu7q9/9+aPYs0gb1izBbIni4Dk/20tZunpw++aljVVQ3maBWba88+xG2ilBaDiA==
 
 wbuf@^1.1.0, wbuf@^1.7.3:
   version "1.7.3"
