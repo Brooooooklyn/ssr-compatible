@@ -1166,10 +1166,10 @@
   dependencies:
     source-map "^0.6.1"
 
-"@types/wavesurfer.js@^3.2.0":
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/@types/wavesurfer.js/-/wavesurfer.js-3.2.0.tgz#9d72f7d720380ed22e7f070372afd566de6d67a7"
-  integrity sha512-qwzUfxbXhcEMSseDSEMlDtGR6XefET4jB1hU3PxapCCkSrNZOkkSXVNAoj0bNRmaJnK407qS/BOvhKqghh6grg==
+"@types/wavesurfer.js@^3.3.0":
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/@types/wavesurfer.js/-/wavesurfer.js-3.3.0.tgz#79b22405a305cac1acfc19d648574d032b16ca92"
+  integrity sha512-OqxmEUl2CP1G5tl1jj1huzo/38FiWpDyS1woI/Hu6S9wsLJ2ihcimAAjdQlwNtXDl2CjVBDl4dVoHN8XTX8eSQ==
 
 "@types/webpack-dev-server@^3.10.1":
   version "3.10.1"
